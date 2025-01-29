@@ -1,0 +1,86 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+.main-header{
+    background-color: black;
+    color: white;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-header .logo img{width: 50px;height: 50px;border-radius: 50%;}
+.main-header .menu ul{
+    display: flex;
+}
+.main-header .menu ul li{
+    padding: 12px 35px;
+    margin: 7px;
+    list-style: none;
+    background-color: rgba(33, 42, 212, 0.781);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.main-header .social-icons button{
+    padding: 12px 45px;
+background-color: rgba(33, 42, 212, 0.781);color: rgba(255, 255, 255, 0.781);
+border: none;
+border-radius: 10px;font-weight: bold;
+}
+.main-product{display: flex;
+flex-wrap: wrap;
+justify-content: center;
+background-color: black;
+margin: 20px;
+padding: 40px;
+border-radius: 15px;
+}
+.product{
+    /* background-color: rgba(33, 42, 212, 0.781); */
+    background-color: #141C1E;
+    color: rgba(255, 255, 255, 0.838);
+    padding: 12px;
+    margin: 15px;
+    border-radius: 10px;
+    width: calc(100%/3.5);
+}
+.product img{width: 100%;border-radius: 6px;}
+.product h2, .product p, .product button{margin: 10px 0px;}
+.product p{line-height: 24px;font-size: 19px;}
+.product button{padding: 12px 45px;
+background-color: black;color: rgba(255, 255, 255, 0.781);
+border: none;
+border-radius: 10px;font-weight: bold;}
+
+@media (min-width:268px) and (max-width:600px){
+  .main-header{
+    display: block;
+    text-align: center;
+  }
+  .main-header .menu ul{
+    display: block;
+  }
+  .main-header .menu ul li{
+    margin: 12px 0px;
+  }
+  .main-product{
+    display: block;
+    margin: 0px;
+  }
+  .main-product .product{width: 90%;padding: 20px;}
+}
+
+@media (min-width:600px) and (max-width:884px){
+    .main-header{
+        display: block;
+        text-align: center;
+      }
+      .main-header .menu ul{
+        display: block;
+      }
+      .main-header .menu ul li{
+        margin: 12px 0px;
+      }
+     .product{
+        width: 43%;
+     }
+}
